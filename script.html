@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Proposal</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #8A2BE2; /* Color morado de fondo */
+            background-image: url('background.jpg'); /* Puedes cambiar 'background.jpg' por la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(10px); /* Aplicar un filtro de desenfoque */
+        }
+        #proposal {
+            text-align: center;
+            color: white;
+        }
+        button {
+            font-size: 24px; /* Tamaño del texto de los botones */
+            padding: 15px 30px; /* Espaciado dentro del botón */
+            margin: 10px; /* Espaciado entre botones */
+        }
+        #noButton {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="proposal">
+        <img src="C:\Users\jesus\Desktop\Captura de pantalla 2024-02-11 221054.jpg" alt="Imagen de fondo" style="position: 99px fixed; bottom: 0; right: 2px; z-index: 0; width: 40%;">
+        <h5 style="font-size: 80px;">Would you like to be my Valentine?</h5> <!-- Tamaño del texto del título -->
+        <button id="yesButton">是 / Sí</button>
+        <button id="noButton" onclick="moveButton()">不 / No</button>
+    </div>
+    <img src="C:\Users\jesus\Desktop\heart-png.webp" 
+    alt="Imagen de fondo" 
+    style="position: fixed; bottom: 0; right: 0; z-index: 0; width: 25%;">
+    <script>
+        function moveButton() {
+            const button = document.getElementById('noButton');
+            const newX = Math.floor(Math.random() * window.innerWidth);
+            const newY = Math.floor(Math.random() * window.innerHeight);
+            button.style.position = 'absolute';
+            button.style.left = newX + 'px';
+            button.style.top = newY + 'px';
+        }
+
+        document.getElementById('yesButton').addEventListener('click', function() {
+            alert("首先，我想向你坦白一件事，我知道，时代对我们来说并不容易。我一直认为你是一个值得这个宇宙的一切的女人。如果我可以，我想给你。我希望你想想你希望我们发生的一切。因为，我想实现你的这些愿望。我不希望我们满足于很少，因为我想使我们所有的梦想成为现实。");
+            alert("我也不想我们为我们的距离而痛苦，我的礼物的第二部分是关于这个… 因为事实上，我比你想象的更接近。我爱你<3 Always");
+            alert("有点动态，对吧？哈哈。好吧，我会告诉你奖品:).");
+            alert("您刚刚赢得了2月17日（星期六）在线观看电影的优惠券！您可以根据自己的喜好选择，但我希望这次不一样这次是两部电影我们可以计划电影所以我想让你知道");
+        });
+
+        alert("这个建议分为两部分。主要是因为我们无法在2月17日之前做任何事情。因为你现在在春节期间离开了家");
+        alert("但是，我仍然希望您注意这个建议和下面的内容。我希望您会喜欢:)");
+    </script>
+</body>
+</html>
+
+
+
